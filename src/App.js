@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './hello.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({name}) {
+  return <div>hello <strong>{name}</strong>
+  <h1>Intro To react</h1>
+  <ul className="name">
+  <li>Pakistan</li>
+  <li>India</li>
+  <li>Bangladesh</li>
+  </ul>
+
+  <ol>
+  <li>Samsung</li>
+  <li>Huawie</li>
+  <li>Oppo</li>
+  </ol>
+
+  <br/>
+  5 + 3 = {5 + 3}
+  </div>
 }
 
 export default App;
